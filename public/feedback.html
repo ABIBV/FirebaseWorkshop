@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Firebase Workshop | Feedback</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/feedback.css">
+  </head>
+  <body>
+    <header>
+      <nav class="nav bg-primary shadow text-white">
+        <div class="w-100 d-flex align-items-center justify-content-between px-md-4">
+          <h3 class="py-2 mb-0">Workshop Kit</h3>
+          <div class="d-flex align-items-center justify-content-around">
+            <div class="d-flex align-items-center justify-content-between">
+              <a href="#" class="py-2">
+                <p class="lead mb-0">Classes</p>
+              </a>
+              <a href="#" class="active py-2">
+                <p class="lead mb-0">Feedback</p>
+              </a>
+            </div>
+            <div class="user-profile dropdown ml-md-5 mx-2" data-offset="-200,0">
+              <div class="dropdown-toggle" data-toggle="dropdown">
+                <img src="images/account_circle.svg" class="rounded-circle" id="profileImage" alt="Account">
+              </div>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" id="signOutBtn" href="#">Sign Out</a>
+              </div>
+            </div>
+            <div class="user-profile ml-md-5 mx-2">
+            </div>
+          </div>
+
+        </div>
+      </nav>
+    </header>
+    <div class="container d-flex flex-column justify-content-center pt-5">
+      <div class="mb-3">
+        <h1 class="display-4">Feedback Form</h1>
+      </div>
+      <div class="form-group">
+        <label for="day">Select Day</label>
+        <select class="form-control" name="day" id="day">
+          <option value="day1">Day 1</option>
+          <option value="day2">Day 2</option>
+          <option value="day3">Day 3</option>
+          <option value="day4">Day 4</option>
+          <option value="day5">Day 5</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="feedback">Feedback</label>
+        <textarea class="form-control" name="feedback" id="feedback" rows="3"></textarea>
+      </div>
+      <a id="submitBtn" class="btn btn-primary" href="#" role="button">Submit</a>
+    </div>
+
+     <!-- update the version number as needed -->
+     <script src="/__/firebase/8.2.7/firebase-app.js"></script>
+     <!-- include only the Firebase features as you need -->
+     <script src="/__/firebase/8.2.7/firebase-auth.js"></script>
+     <!-- <script src="/__/firebase/8.2.7/firebase-database.js"></script>
+     <script src="/__/firebase/8.2.7/firebase-firestore.js"></script>
+     <script src="/__/firebase/8.2.7/firebase-functions.js"></script>
+     <script src="/__/firebase/8.2.7/firebase-messaging.js"></script>
+     <script src="/__/firebase/8.2.7/firebase-storage.js"></script>
+     <script src="/__/firebase/8.2.7/firebase-analytics.js"></script>
+     <script src="/__/firebase/8.2.7/firebase-remote-config.js"></script>
+     <script src="/__/firebase/8.2.7/firebase-performance.js"></script> -->
+     <!-- 
+       initialize the SDK after all desired features are loaded, set useEmulator to false
+       to avoid connecting the SDK to running emulators.
+     -->
+     <script src="/__/firebase/init.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/auth.js"></script>
+    <script src="./js/feedback.js"></script>
+
+  </body>
+</html>

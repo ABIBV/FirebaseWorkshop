@@ -1,0 +1,38 @@
+nav a {
+  text-decoration: none;
+  color: unset;
+  margin: 0 0.25rem;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: unset;
+  border-bottom: 2px solid white;
+}
+
+nav a.active {
+  background-color: white;
+  color: #007bff;
+  padding: 0 0.25rem;
+  border: 1px solid white;
+}
+
+nav a.active p {
+  font-weight: 500;
+}
+
+nav a.active:hover {
+  text-decoration: none;
+}
+
+nav .user-profile img {
+  width: 3rem;
+}
+
+nav .dropdown-toggle:hover {
+  cursor: pointer;
+}
+
+nav .dropdown-toggle:after {
+  display: none;
+}
