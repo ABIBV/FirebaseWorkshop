@@ -16,14 +16,6 @@
         <div class="w-100 d-flex align-items-center justify-content-between px-md-4">
           <h3 class="py-2 mb-0">Workshop Kit</h3>
           <div class="d-flex align-items-center justify-content-around">
-            <div class="d-flex align-items-center justify-content-between">
-              <a href="#" class="py-2">
-                <p class="lead mb-0">Classes</p>
-              </a>
-              <a href="#" class="active py-2">
-                <p class="lead mb-0">Feedback</p>
-              </a>
-            </div>
             <div class="user-profile dropdown ml-md-5 mx-2" data-offset="-200,0">
               <div class="dropdown-toggle" data-toggle="dropdown">
                 <img src="images/account_circle.svg" class="rounded-circle" id="profileImage" alt="Account">
@@ -59,19 +51,26 @@
       </div>
       <a id="submitBtn" class="btn btn-primary" href="#" role="button">Submit</a>
     </div>
-
+    <div class="container feedBackList mt-4 d-none">
+      <div>
+        <h2>My Feedbacks</h2>
+      </div>
+      <ul class="list-unstyled mt-3">
+        
+      </ul>
+    </div>
      <!-- update the version number as needed -->
      <script src="/__/firebase/8.2.7/firebase-app.js"></script>
      <!-- include only the Firebase features as you need -->
      <script src="/__/firebase/8.2.7/firebase-auth.js"></script>
-     <!-- <script src="/__/firebase/8.2.7/firebase-database.js"></script>
+     <!-- <script src="/__/firebase/8.2.7/firebase-database.js"></script> -->
      <script src="/__/firebase/8.2.7/firebase-firestore.js"></script>
-     <script src="/__/firebase/8.2.7/firebase-functions.js"></script>
-     <script src="/__/firebase/8.2.7/firebase-messaging.js"></script>
-     <script src="/__/firebase/8.2.7/firebase-storage.js"></script>
-     <script src="/__/firebase/8.2.7/firebase-analytics.js"></script>
-     <script src="/__/firebase/8.2.7/firebase-remote-config.js"></script>
-     <script src="/__/firebase/8.2.7/firebase-performance.js"></script> -->
+     <!-- <script src="/__/firebase/8.2.7/firebase-functions.js"></script> -->
+     <!-- <script src="/__/firebase/8.2.7/firebase-messaging.js"></script> -->
+     <!-- <script src="/__/firebase/8.2.7/firebase-storage.js"></script> -->
+     <!-- <script src="/__/firebase/8.2.7/firebase-analytics.js"></script> -->
+     <!-- <script src="/__/firebase/8.2.7/firebase-remote-config.js"></script> -->
+     <!-- <script src="/__/firebase/8.2.7/firebase-performance.js"></script> -->
      <!-- 
        initialize the SDK after all desired features are loaded, set useEmulator to false
        to avoid connecting the SDK to running emulators.

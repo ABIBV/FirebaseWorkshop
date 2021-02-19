@@ -36,3 +36,7 @@ nav .dropdown-toggle:hover {
 nav .dropdown-toggle:after {
   display: none;
 }
+
+.feedBackList ul li {
+  margin: 1rem 0;
+}

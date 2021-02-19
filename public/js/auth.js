@@ -14,7 +14,6 @@ const detectDevice = () => {
 
 $("#googleSignBtn").click(function(e) {
   e.preventDefault();
-  console.log(detectDevice());
   if (detectDevice()) {
       auth.signInWithRedirect(provider);
 
@@ -22,7 +21,6 @@ $("#googleSignBtn").click(function(e) {
       auth.signInWithPopup(provider).then((result) => {
           var currentUser = result.additionalUserInfo;
           currentUser.uid = result.user.uid;
-          localStorage.setItem("result",JSON.stringify(result));
           localStorage.setItem("currentUser", JSON.stringify(currentUser));
       }).catch((error) => {
           console.log(error.message);
